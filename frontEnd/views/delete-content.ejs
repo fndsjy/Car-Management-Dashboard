@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Chapter 5</title>
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="css/index.css" rel="stylesheet">
+    
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('index'); %>
+    <section>
+      <div class="modal fade" id="exampleModalid" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex flex-column gap-3 text-center">
+                <image class="mx-auto" src="/images/delete-confirmation.png" height="121px" />
+                <div class="fw-bolder">Menghapus Data Mobil</div>
+                <div class="fw-light">
+                  Setelah dihapus, data mobil tidak dapat dikembalikan. Yakin ingin menghapus?
+                </div>
+              </div>
+            </div>
+            <div class="m-2 d-flex justify-content-center align-content-center pb-3">
+
+              <a class="mx-2" href="/delete-car/id" style="width: 30%;">
+                <button type="button" class="btn btn-danger " style="width:100% ;" >YA</button>
+              </a>
+              
+              <button type="button" class="btn btn-primary mx-2" style="width: 30%;" data-bs-dismiss="modal">Tidak</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
